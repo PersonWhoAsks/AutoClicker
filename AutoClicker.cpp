@@ -5,7 +5,7 @@ using namespace std;
 
 int toggleKey = 0xBE;   // . key
 int endKey = 0xC0;      // ` key
-int delayTime = 10;      // in ms
+int delayTime = 10;     // in ms
 
 bool isEnabled = false;
 
@@ -35,7 +35,7 @@ int main() {
 		if (GetKeyState(toggleKey) & 0x8000) {
             isEnabled = !isEnabled;
             cout << "Toggled to: " << (isEnabled == true ? "True" : "False") << endl;
-            Sleep(500); 
+            Sleep(300); 
 		}
 
         // Handle end key
